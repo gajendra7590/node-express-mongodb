@@ -4,8 +4,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-        user: 'gajendra.pawar.mailer@gmail.com',
-        pass: 'phwodpvmxqkouphv',
+        user: '',
+        pass: '',
     },
     secure: true,
 });
@@ -13,8 +13,8 @@ const transporter = nodemailer.createTransport({
 
 const sendEmail = async () => {
     const mailData = {
-        from: 'gajendra.pawar.mailer@gmail.com',
-        to: 'er.gajendrapawar@gmail.com',
+        from: '',
+        to: '',
         subject: 'Sending Email using Node.js',
         text: 'That was easy!',
         html: '<b>Hey there! </b> <br> This is our first message sent with Nodemailer <br />',
